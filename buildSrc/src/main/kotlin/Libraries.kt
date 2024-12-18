@@ -1,0 +1,16 @@
+object Libraries {
+    const val androidxCoreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
+    const val junit = "junit:junit:${Versions.junit}"
+    const val androidxJunit = "androidx.test.ext:junit:${Versions.junitVersion}"
+    const val androidxEspressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
+    const val androidxLifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}"
+    const val androidxActivityCompose = "androidx.activity:activity-compose:${Versions.activityCompose}"
+    const val androidxComposeBom = "androidx.compose:compose-bom:${Versions.composeBom}"
+    const val androidxUi = "androidx.compose.ui:ui"
+    const val androidxUiGraphics = "androidx.compose.ui:ui-graphics"
+    const val androidxUiTooling = "androidx.compose.ui:ui-tooling"
+    const val androidxUiToolingPreview = "androidx.compose.ui:ui-tooling-preview"
+    const val androidxUiTestManifest = "androidx.compose.ui:ui-test-manifest"
+    const val androidxUiTestJunit4 = "androidx.compose.ui:ui-test-junit4"
+    const val androidxMaterial3 = "androidx.compose.material3:material3"
+}

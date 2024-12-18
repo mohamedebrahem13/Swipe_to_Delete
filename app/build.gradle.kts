@@ -5,17 +5,17 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
-    compileSdk = 34
+    namespace = BuildConfig.namespace
+    compileSdk = BuildConfig.compileSdk
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
-        minSdk = 30
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = BuildConfig.applicationId
+        minSdk = BuildConfig.minSdk
+        targetSdk = BuildConfig.targetSdk
+        versionCode = BuildConfig.versionCode
+        versionName = BuildConfig.versionName
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = BuildConfig.testInstrumentationRunner
     }
 
     buildTypes {
@@ -27,12 +27,13 @@ android {
             )
         }
     }
+
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.toVersion(BuildConfig.sourceCompatibility)
+        targetCompatibility = JavaVersion.toVersion(BuildConfig.targetCompatibility)
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = BuildConfig.jvmTarget
     }
     buildFeatures {
         compose = true
@@ -40,7 +41,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
